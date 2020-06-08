@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+        <style>
+            .logoempresa, td, tr{
+                border-right: 10px solid transparent;    
+    margin-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    margin-top: 25px;
+}
+.cor-fundo{
+    background-color:#a0090e  ;
+    width: 100%;
+    height: 90px;
+}
+.formatacao-titulo{
+    color:#9e1115;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-left: 100px;
+}
+.login-formatacao{
+    margin-left: 25%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 4px;
+
+}
+.button {
+  border: none;
+  color: white;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #9e1115; 
+  color: white; 
+  border: 2px solid #9e1115;
+}
+.input{  
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    background:white; 
+    border:0px none;
+    width:200px
+}
+.inputmsg{  
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    background: white; 
+    border:0px none ;
+}
+.cor-rodape{
+    background-color:#a0090e;
+    width: 100%;
+    height: 100px;
+    margin-top: 0%;
+}
+.cortitulo-rodape{
+  margin-right: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+  color: white;
+  text-align: right;
+
+}
+
+/*Mobile*/
+.login-formatacaomobile{
+    margin-left: 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 4px;
+
+}
+.formatacao-titulomobile{
+    color:#9e1115;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-left: 10px;
+}
+/*Form. Mobile/Desk*/
+.desktop {
+  display: block;
+  /* ou inline, inline-block */
+}
+
+.mobile {
+  display: none;
+}
+
+@media(max-width: 600px) {
+  .mobile {
+    display: block;
+    /* ou inline, inline-block */
+  }
+  .desktop {
+    display: none;
+  }
+}
+</style>
+
+</head>
+
+<body>
+    <header>
+        <div class="cor-fundo">
+            <table>
+                <tr>
+                  <td>
+                    <div class="logoempresa">
+            <a href="D:\GitDiretorios\Trabalho02Furb/projeto02.html5.html"; style="color: white"> <b>BLU Eletro</b></a> 
+            </div>
+          </td>
+        </tr>
+        </table>
+        </div>
+        </header>
+
+<!--Titulo Desktop-->
+<nav>
+        <span class="desktop">
+<div class="formatacao-titulo">
+<h2>Contate-nos</h2>
+</div>
+</span>
+
+<!--Titulo Mobile-->
+<span class="mobile">
+  <div class="formatacao-titulomobile">
+  <h2>Contate-nos</h2>
+  </div>
+  </span>
+
+  <!--Campo Contato Desktop-->
+  <span class="desktop">
+    <table style="margin-left: 382px;">
+<tr>
+  <td>
+<div class="login-formatacao">
+        <label>*Nome Completo:</label>
+        <input style="margin-left: 10px;height: 30px; font-size: 16px;" class="input" name="nome" type="text" id="nome" placeholder="Primeiro Nome">
+    </div>
+  </td>
+  <td>
+    <div class="login-formatacao">
+      <label style="margin-left: -78px;">*Telefone de Contato:</label>
+    <input style="margin-left: -65px;height: 30px; font-size: 16px;" class="input" name="telefone" type="text" id="telefone" placeholder="(DDD)____-____">
+  </div>
+  </td>
+  <td>
+    <div class="login-formatacao">
+      <label style="margin-left: -38px;">Celular:</label>
+    <input style="margin-left: -38px;height: 30px; font-size: 16px;" class="input" name="telefone" type="text" id="celular" placeholder="(DDD)____-____">
+    </div>
+  </td>
+</tr>
+</table>
+<table style="margin-left: 410px;">
+  <tr>
+  <td>
+<div class="login-formatacao">
+  <label>*E-mail:</label>
+<input style="margin-left: 10px;height: 30px; font-size: 16px;" class="input" name="email" type="email" id="email" placeholder="Email">
+</div>
+</td>
+<td>
+  <div class="login-formatacao">
+    <label>*Estado:</label>
+  <input style="margin-left: 10px;height: 30px; font-size: 16px;" class="input" name="estado" type="text" id="estado" placeholder="Estado">
+</div>
+</td>
+<td>
+  <div class="login-formatacao">
+    <label>*Cidade:</label>
+  <input style="margin-left: 8px;height: 30px; font-size: 16px;" class="input" name="cidade" type="text" id="cidade" placeholder="Cidade">
+</div>
+</td>
+</tr>
+<tr>
+  <td>
+    <div class="login-formatacao">
+      <label>*CPF:</label>
+    <input style="margin-left: 10px;height: 30px; font-size: 16px;" class="input" name="cpf" type="text" id="cpf" placeholder="____.____.____-__">
+  </td>
+  <td>
+    <div class="login-formatacao">
+    <label>*Mensagem:</label>
+  </div>
+  </td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+  <td>
+    <div class="login-formatacao">
+      <!--<label>*Mensagem:</label>-->
+      <textarea style="height: 100px; margin-left: 540px; width: 520px;" id="inputmsg"></textarea>
+    </div>
+  </td>
+</tr>
+</table>
+
+        <!--<input style="margin-left: 46px;" class="inputmsg" name="mensagem" type="text" placeholder="Escreva sua mensagem">-->
+    </div>
+
+    <button class="button" style="margin-left: 1250px;" id="enviar" onclick="Enviar()">Enviar</button>
+</div>
+</span>
+
+<!---->
+  <!--Campo Contato Mobile-->
+  <span class="mobile">
+    <table style="margin-left: 0px;">
+<tr>
+  <td>
+<div class="login-formatacaomobile">
+        <label>*Nome Completo:</label>
+        <input style="margin-left: 5px;height: 40px; font-size: 16px;" class="input" name="nome" type="text" id="nome" placeholder="Primeiro Nome">
+    </div>
+  </td>
+  <td>
+    <div class="login-formatacaomobile">
+      <label style="margin-left: 18px;">*Telefone de Contato:</label>
+    <input style="margin-left: 20px;height: 30px; font-size: 16px;" class="input" name="telefone" type="text" id="telefone" placeholder="(DDD)____-____">
+  </div>
+  </td>
+</tr>
+</table>
+
+<table style="margin-left: 0px;">
+<tr>
+  <td>
+    <div class="login-formatacaomobile">
+      <label style="margin-left: 8px;">Celular:</label>
+    <input style="margin-left: 6px;height: 30px; font-size: 16px;" class="input" name="telefone" type="text" id="celular" placeholder="(DDD)____-____">
+    </div>
+  </td>
+  <td>
+<div class="login-formatacaomobile">
+  <label style="margin-left: 18px;">*E-mail:</label>
+<input style="margin-left: 24px;height: 30px; font-size: 16px;" class="input" name="email" type="email" id="email" placeholder="Email">
+</div>
+</td>
+</tr>
+</table>
+
+<table style="margin-left: 0px;">
+  <tr>
+<td>
+  <div class="login-formatacaomobile">
+    <label style="margin-left: 4px;">*UF:</label>
+  <input style="margin-left: 10px;height: 30px; font-size: 16px;" class="input" name="estado" type="text" id="estado" placeholder="Estado">
+</div>
+</td>
+<td>
+  <div class="login-formatacaomobile">
+    <label style="margin-left: 12px;">*Cidade:</label>
+  <input style="margin-left: 18px;height: 30px; font-size: 16px;" class="input" name="cidade" type="text" id="cidade" placeholder="Cidade">
+</div>
+</td>
+</tr>
+</table>
+
+
+<table style="margin-left: 0px;">
+<tr>
+  <td>
+    <div class="login-formatacaomobile">
+      <label style="margin-left: 4px;">*CPF:</label>
+    </div>
+  </td>
+</tr>
+</table>
+<table>
+  <tr>
+  <td>
+    <div class="login-formatacaomobile">
+<input style="margin-left: 10px;height: 30px; font-size: 16px;" class="input" name="cpf" id="cpf" type="text" placeholder="____.____.____-__">
+</div>
+</td>
+</tr>
+
+<table style="margin-left: 0px;">
+  <tr>
+  <td>
+    <div class="login-formatacaomobile">
+    <label style="margin-left: 4px;">*Mensagem:</label>
+  </div>
+  </td>
+  </tr>
+  </table>
+
+  <table>
+  <tr>
+  <td>
+    <div class="login-formatacaomobile">
+      <!--<label>*Mensagem:</label>-->
+      <textarea style="height: 200px; margin-left: 10px; width: 400px;" id="inputmsg"></textarea>
+    </div>
+  </td>
+</tr>
+</table>
+
+        <!--<input style="margin-left: 46px;" class="inputmsg" name="mensagem" type="text" placeholder="Escreva sua mensagem">-->
+    </div>
+
+    <button class="button" style="margin-left: 330px;" id="enviar" onclick="enviar()">Enviar</button>
+ 
+
+</div>
+</span>
+</nav>
+
+
+
+                               
+                               <footer>
+                                 <!--Rodape Desktop--> 
+                                <span class="desktop">
+                      <div style="margin-top: 450px;" class="cor-rodape">
+                        <div class="cortitulo-rodape">
+                       <p><b> <br />BLU Eletro</b></p> 
+                      </div>
+                      </div>
+                      </span>
+
+                        <!--Rodape Mobile--> 
+                      <span class="mobile">
+                        <div style="margin-top: 50px;" class="cor-rodape">
+                          <div class="cortitulo-rodape">
+                         <p><b> <br />BLU Eletro</b></p> 
+                        </div>
+                        </div>
+                        </span>
+                    </footer>
+                    <script src="javascriptcontato.js"></script>
+</body>
+</html> 
