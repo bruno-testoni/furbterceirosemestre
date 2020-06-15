@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+        <style>
+            .logoempresa, td, tr{
+                border-right: 10px solid transparent;    
+    margin-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    margin-top: 25px;
+}
+.cor-fundo{
+    background-color:#a0090e  ;
+    width: 100%;
+    height: 90px;
+}
+.formatacao-titulo{
+    color:#9e1115;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-left: 100px;
+}
+.login-formatacao{
+    margin-left: 25%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: left;
+
+}
+.button {
+  border: none;
+  color: white;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #9e1115; 
+  color: white; 
+  border: 2px solid #9e1115;
+}
+.resultado {
+      padding: 20px;
+      border: 2px solid gray;
+      width: 30%;
+      font-family: Arial;
+         font-size: 22px;
+    
+    }
+    .cor-rodape{
+    background-color:#a0090e;
+    width: 100%;
+    height: 100px;
+    margin-top: 0%;
+}
+.cortitulo-rodape{
+  margin-right: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+  color: white;
+  text-align: right;
+
+}
+/*Mobile Style*/
+.formatacao-titulomobile{
+    color:#9e1115;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-left: 20px;
+}
+.login-formatacaomobile{
+    margin-left: 40px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: left;
+
+}
+/*Form. Mobile/Desk*/
+.desktop {
+  display: block;
+  /* ou inline, inline-block */
+}
+
+.mobile {
+  display: none;
+}
+
+@media(max-width: 600px) {
+  .mobile {
+    display: block;
+    /* ou inline, inline-block */
+  }
+  .desktop {
+    display: none;
+  }
+}
+/*.button1 {
+  background-color: #9e1115; 
+  color: white; 
+  border: 2px solid #9e1115;
+}*/
+</style>
+            </head>
+            <body>
+
+
+                <!--cabeca da pagina-->
+                <header>
+                    <div class="cor-fundo">
+                        <table>
+                            <tr>
+                              <td>
+                                <div class="logoempresa">
+                        <a href="D:\GitDiretorios\Trabalho02Furb/projeto02.html5.html"; style="color: white"> <b>BLU Eletro</b></a> 
+                        </div>
+                      </td>
+                    </tr>
+                    </table>
+                    </div>
+                    </header>
+
+                    <!--Identificacao Desktop-->
+                    <span class="desktop">
+                    <div class="formatacao-titulo">
+                      <p><b>Cadastre-se</b></p>
+                    </div>
+                  </span>
+
+                       <!--Identificacao Mobile-->
+                       <span class="mobile">
+                       <div class="formatacao-titulomobile">
+                        <p><b>Cadastre-se</b></p>
+                      </div>
+                    </span>
+
+                    <nav>
+                    <!--Cadastro-->
+                    <span class="desktop">
+                    
+                            <div class="login-formatacao">
+                                <p>
+                                <label>*Nome Completo:</label></p>
+                                <p><input class="nomecompleto" type="text" id="nomecompleto"></p>
+                                        <label>*Email:</label></p>
+                                        <p><input class="email" type="email" id="email"></p>
+                                        <p>
+                                            <label>*Data de Nascimento:</label></p>
+                                            <p><input class="datadenascimento" type="date" id="datadenascimento"></p>
+
+                                            <label>*CPF:</label></p>
+                                            <p><input class="cpf" type="text" id="cpf"></p>
+
+                                            <label>*Senha:</label></p>
+                                            <p><input class="senha" type="password" id="senha"></p>
+
+                                            <label>*Confirme sua Senha:</label></p>
+                                            <p><input class="confirmasenha" type="password" id="confirmasenha"></p>
+
+                               <button class="button" style="margin-left: 60px;" id="cadastrar" onclick="cadastrar()">Cadastrar</button>              
+                               </div>
+                              </span>
+
+                                                  <!--Cadastro Mobile-->
+                    <span class="mobile">
+                              <div class="login-formatacaomobile">     
+                                  <p>
+                                  <label>*Nome Completo:</label></p>
+                                  <p><input class="nomecompleto" type="text" id="nomecompleto"></p>
+                                          <label>*Email:</label></p>
+                                          <p><input class="email" type="email" id="email"></p>
+                                          <p>
+                                              <label>*Data de Nascimento:</label></p>
+                                              <p><input class="datadenascimento" type="date" id="datadenascimento"></p>
+  
+                                              <label>*CPF:</label></p>
+                                              <p><input class="cpf" type="text" id="cpf"></p>
+  
+                                              <label>*Senha:</label></p>
+                                              <p><input class="senha" type="password" id="senha"></p>
+  
+                                              <label>*Confirme sua Senha:</label></p>
+                                              <p><input class="confirmasenha" type="password" id="confirmasenha"></p>
+  
+                                 <button class="button" style="margin-left: 60px;" id="cadastrar" onclick="cadastrar()">Cadastrar</button>              
+                                 </div>
+                                </span>
+
+                              <!--Desktop-->
+                               <span class="desktop">
+                               <div class="formatacao-titulo">
+                                <a style="color:#9e1115"margin-top="8px"><p><b>Já possui conta? <a href="D:/GitDiretorios/Trabalho02Furb/projeto02.login.html5.html" style="color:#9e1115"> Login</b></p></a></a>
+                                </div>
+                              </span>
+
+                               <!--Mobile-->
+                              <span class="mobile">
+                                <div class="formatacao-titulomobile">
+                                 <a style="color:#9e1115"margin-top="8px"><p><b>Já possui conta? <a href="D:/GitDiretorios/Trabalho02Furb/projeto02.login.html5.html" style="color:#9e1115"> Login</b></p></a></a>
+                                 </div>
+                               </span>
+                               </nav>
+                           
+                               
+                              <!--function cadastrar() {
+                                  var nomecompleto = document.getElementsByClassName("nomecompleto")
+                                  var resposta = document.getElementById('resposta');
+                                  var nomescompletos = ""
+                                  var resultado = ""
+                    for( var posicao = 0; posicao < nomescompleto.length; posicao++) {
+                
+                if( nomescompleto[posicao] == nomecompleto) {
+                
+                    existe = true;
+                    alert('O nome ja existe');
+                    
+                    }else{
+                        nomescompleto = nomecompleto
+                        nomescompletos.push("")
+                        resultado = ("Cadastrado") 
+                        resposta.innerHTML =resultado;
+                    }
+                    }
+                  nomecompleto.push("");
+                  document.getElementsByClassName("nomecompleto").innerHTML = nomecompleto;
+                }-->
+                <script type="text/javascript" src="javascript.js"></script>
+
+ 
+ <!--/*function cadastrar(){*/
+  
+  /*if(document.getElementById("nomecompleto").value.length < 3){
+    alert("Por Favor Coloque seu nome")
+  
+  }else{
+ alert("Cadastrado com sucesso")
+  
+  }*/-->
+
+
+<!--Colocar ID NOS INPUTS*/
+
+
+
+  /*for(nomecompleto != null)
+   resultado = nomecompleto;
+resposta = alert('Bruno Testoni')
+  resposta.innerHTML =nomecompleto;
+ }-->
+                <footer>
+                  <!--Rodape Desktop--> 
+                  <span class="desktop">
+                    <div style="margin-top: 450px;" class="cor-rodape">
+                      <div class="cortitulo-rodape">
+                     <p><b> <br />BLU Eletro</b></p> 
+                    </div>
+                    </div>
+                    </span>
+
+                      <!--Rodape Mobile--> 
+                    <span class="mobile">
+                      <div style="margin-top: 50px;" class="cor-rodape">
+                        <div class="cortitulo-rodape">
+                       <p><b> <br />BLU Eletro</b></p> 
+                      </div>
+                      </div>
+                      </span>
+                </footer>
+                              
+                               </body>
+                               </html>

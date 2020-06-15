@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+        <style>
+            .logoempresa, td, tr{
+                border-right: 10px solid transparent;    
+    margin-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    margin-top: 25px;
+}
+.cor-fundo{
+    background-color:#a0090e  ;
+    width: 100%;
+    height: 90px;
+}
+.formatacao-titulo{
+    color:#9e1115;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-left: 100px;
+}
+.login-formatacao{
+    margin-left: 25%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: left;
+
+}
+.button {
+  border: none;
+  color: white;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #9e1115; 
+  color: white; 
+  border: 2px solid #9e1115;
+}
+.cor-rodape{
+    background-color:#a0090e;
+    width: 100%;
+    height: 100px;
+    margin-top: 0%;
+}
+.cortitulo-rodape{
+  margin-right: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+  color: white;
+  text-align: right;
+
+}
+.formatacao-titulomobile{
+    color:#9e1115;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 30px;
+}
+/*Form. Mobile/Desk*/
+.desktop {
+  display: block;
+  /* ou inline, inline-block */
+}
+
+.mobile {
+  display: none;
+}
+
+@media(max-width: 600px) {
+  .mobile {
+    display: block;
+    /* ou inline, inline-block */
+  }
+  .desktop {
+    display: none;
+  }
+}
+/*.button1 {
+  background-color: #9e1115; 
+  color: white; 
+  border: 2px solid #9e1115;
+}*/
+</style>
+            </head>
+            <body>
+                <!--cabeca da pagina-->
+                <header>
+                    <div class="cor-fundo">
+                        <table>
+                            <tr>
+                              <td>
+                                <div class="logoempresa">
+                        <a href="D:\GitDiretorios\Trabalho02Furb/projeto02.html5.html"; style="color: white"> <b>BLU Eletro</b></a> 
+                        </div>
+                      </td>
+                    </tr>
+                    </table>
+                    </div>
+                    </header>
+                    
+                    <!--Identificacao Desktop-->
+                    <span class="desktop">
+                    <div class="formatacao-titulo">
+                      <p><b>Identificação</b></p>
+                    </div>
+                  </span>
+
+                    <!--Login Desktop-->
+                    <span class="desktop">
+                    <nav>
+                            <div class="login-formatacao">
+
+                               
+                                <p>
+                                <label>E-mail:</label></p>
+                                <p><input class="email" id="email" type="text"></p>
+                                <p>
+                                    <label>Senha:</label></p>
+                                    <p><input class="senha" id="senha" type="password"></p>
+
+                               <button class="button" style="margin-left: 60px;" id="continuar" onclick="continuar()">Continuar</button>
+
+                               </form>
+                               </div>
+                               <div class="formatacao-titulo">
+                               <a style="color:#9e1115"margin-top="8px"><p><b>Não possui conta? <a href="D:/GitDiretorios/Trabalho02Furb/projeto02.cadastro.html5.html" style="color:#9e1115"> Cadastre-se</p></b></a></a>
+                               </div>
+                               </nav>
+                               <script type="text/javascriptlogin" src="javascrriptlogin.js"></script>
+                               </body>
+                               </html>
+                              </span>
+
+      <!--Identificacao Mobile-->
+      <span class="mobile">
+        <div style="margin-left: 20px;" class="formatacao-titulo">
+          <p><b>Identificação</b></p>
+        </div>
+      </span>
+
+
+                                                  <!--Login Mobile-->
+                    <span class="mobile">
+                      <nav>
+                              <div class="login-formatacao">
+  
+                                 
+                                  <p>
+                                  <label style="margin-left:20px;">E-mail:</label></p>
+                                  <p><input style="margin-left: 20px;" class="email" id="email" type="text"></p>
+                                  <p>
+                                      <label style="margin-left:20px;">Senha:</label></p>
+                                      <p><input style="margin-left:20px;" class="senha" id="senha" type="password"></p>
+  
+                                 <button class="button" style="margin-left: 80px;" id="continuar" onclick="continuar()">Continuar</button>
+  
+                                 </form>
+                                 </div>
+                                 <div class="formatacao-titulomobile">
+                                 <a style="color:#9e1115"margin-top="8px"><p><b>Não possui conta? <a href="D:/GitDiretorios/Trabalho02Furb/projeto02.cadastro.html5.html" style="color:#9e1115"> Cadastre-se</p></b></a></a>
+                                 </div>
+                                 </nav>
+                                 <script type="text/javascriptlogin" src="javascriptlogin.js"></script>
+                                 </body>
+                                 </html>
+                                </span>
+
+
+                               <!--Rodape Desktop--> 
+                               <footer>
+                                <span class="desktop">
+                      <div style="margin-top: 450px;" class="cor-rodape">
+                        <div class="cortitulo-rodape">
+                       <p><b> <br />BLU Eletro</b></p> 
+                      </div>
+                      </div>
+                      </span>
+
+                        <!--Rodape Mobile--> 
+                      <span class="mobile">
+                        <div style="margin-top: 50px;" class="cor-rodape">
+                          <div class="cortitulo-rodape">
+                         <p><b> <br />BLU Eletro</b></p> 
+                        </div>
+                        </div>
+                        </span>
+                    </footer>
+            </body>
+            </html>
