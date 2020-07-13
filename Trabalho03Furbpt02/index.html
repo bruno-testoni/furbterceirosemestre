@@ -1,0 +1,45 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body onload="atualiza()">
+    <script src="javascript.js"></script>
+    <p class="titulo" style="margin-left: 40px;margin-top: 20px;">Adicionar Doce</p>
+    
+    <div>
+        <label for="nome" style="margin-left: 40px;">Nome</label>
+        <input style="margin-left: 10px" class="tabelaprincipal" type="text" id="nome" name="nome" required minlength="3"><br>
+        <label for="salario"style="margin-left: 40px;">Valor</label>
+        <input style="margin-left: 14px" class="tabelaprincipal" type="number" id="valor" name="valor" required minlength="1"><br>
+    </div>
+    <button class="button" style="margin-left: 40px;" type="submit" form=" " id="botao" onclick="verificar()">Salvar</button>
+    <button style="margin-left: 40px" class="button" type="reset" form="">Cancelar</button>
+
+    <body onload="atualizasalgado()">
+        <script src="javascriptS.js"></script>
+        <p class="titulo"style="margin-left: 40px;margin-top: 20px;">Adicionar Salgado</p>
+        
+        <div>
+            <label for="nome"style="margin-left: 40px;">Nome</label>
+            <input style="margin-left: 10px" class="tabelaprincipal" type="text" id="nome" name="nome" required minlength="3"><br>
+            <label for="salario"style="margin-left: 40px;">Valor</label>
+            <input style="margin-left: 14px" class="tabelaprincipal" type="number" id="valor" name="valor" required minlength="1"><br>
+        </div>
+        <button class="button" style="margin-left: 40px;" type="submit" form=" " id="botao" onclick="verificarsalgado()">Salvar</button>
+        <button style="margin-left: 40px;margin-bottom: 20px;" class="button" type="reset" form="">Cancelar</button>
+    <table>
+        <tr class="tabela">
+            <th class="tabela" width = "304px">Id do Doce</th>
+            <th width = "252px">Nome do Doce</th>
+            <th width = "133px">Valor do Doce</th>
+            <!---->
+            <th width = "180px">***********</th>
+            <th class="tabela" width = "304px">Id Salgado</th>
+            <th width = "252px">Nome do Salgado</th>
+            <th width = "183px">Valor do Salgado</th>
+            </tr>
+    </table>
+    </table>
+</body>
